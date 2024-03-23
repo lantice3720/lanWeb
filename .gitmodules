@@ -1,0 +1,3 @@
+[submodule "src/main/webapp/reactapp"]
+	path = src/main/webapp/reactapp
+	url = https://github.com/lantice3720/lanWebReact
