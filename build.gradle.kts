@@ -28,14 +28,14 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-    implementation("org.commonmark:commonmark:0.22.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    implementation("org.commonmark:commonmark:0.22.0")
+
 
     compileOnly("org.projectlombok:lombok")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
@@ -67,7 +67,7 @@ sourceSets {
 
 tasks.withType<ProcessResources> {
     duplicatesStrategy = DuplicatesStrategy.WARN
-    dependsOn("copyReactBuildFiles")
+//    dependsOn("copyReactBuildFiles")
 }
 
 task<Exec>("installReact") {

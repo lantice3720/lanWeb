@@ -1,5 +1,6 @@
 package kr.kro.lanthanide.lanweb
 
+import kr.kro.lanthanide.lanweb.data.DBManager
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 import org.springframework.boot.runApplication
